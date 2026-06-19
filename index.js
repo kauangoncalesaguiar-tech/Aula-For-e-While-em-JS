@@ -19,3 +19,35 @@ let MenorNumero = Math.min(...notas);
 let notaSete = notas.filter(notas => notas >= 7);
 //console.log(notaSete);
  
+//For com Carros
+
+//Total vendido ano
+const TotalVendaCarros = [150000, 231000, 530000, 200000, 170000, 600000, 341000, 121000, 830000, 741000, 300000, 255000]
+let Carrossoma = 0;
+for (let i = 0; i < TotalVendaCarros.length; i++) {
+    Carrossoma += TotalVendaCarros[i];};
+
+//console.log('Valor final do ano: ', Carrossoma)
+
+
+
+
+//Media do Mensal
+let Carrossoma2 = 0;
+for (let i = 0; i < TotalVendaCarros.length; i++) {
+    Carrossoma2 += TotalVendaCarros[i];};
+
+let Carrosmedia = Carrossoma2 / TotalVendaCarros.length;
+
+//console.log(Carrosmedia);
+
+//Maior Venda
+let MaiorVenda = Math.max(...TotalVendaCarros);
+//console.log(MaiorVenda);
+//Menor Venda
+let menorVenda = Math.min(...TotalVendaCarros);
+//console.log(menorVenda);
+
+let inicio = Number(prompt('Valor inicial'));
+let final = Number(prompt('Valor final'));
+for(c = inicio)

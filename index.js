@@ -1,3 +1,5 @@
+import (readline-sync);
+const prompt = require('readline-sync');
 //Notas
 const notas = [7, 8, 9, 10, 2, 6, 9, 3, 8, 9];
 //Media da sala inteira
@@ -30,8 +32,6 @@ for (let i = 0; i < TotalVendaCarros.length; i++) {
 //console.log('Valor final do ano: ', Carrossoma)
 
 
-
-
 //Media do Mensal
 let Carrossoma2 = 0;
 for (let i = 0; i < TotalVendaCarros.length; i++) {
@@ -44,10 +44,39 @@ let Carrosmedia = Carrossoma2 / TotalVendaCarros.length;
 //Maior Venda
 let MaiorVenda = Math.max(...TotalVendaCarros);
 //console.log(MaiorVenda);
+
 //Menor Venda
 let menorVenda = Math.min(...TotalVendaCarros);
 //console.log(menorVenda);
 
+//Conversão de temperatura
 let inicio = Number(prompt('Valor inicial'));
 let final = Number(prompt('Valor final'));
-for(c = inicio)
+//for(c = inicio)
+//console.log
+
+//Acertar senha 
+
+function VerifSenha() {
+     }
+     n1 = Number(prompt.question('Digite uma senha'));
+    const senhaCorreta = 1234;
+    let tentativa = 0;
+        do {
+        tentativa = n1;
+
+        tentativa++;
+
+        if (tentativa = senhaCorreta) {
+            return ('Senha correta');
+            break;
+    }       else {
+            return ('Senha incorreta, tente nomavente');
+    }
+   
+        if (tentativa >= 3) {
+            return('Máximo de tentativas atingido');
+            break
+    }
+}   while(true);
+console.log(VerifSenha);

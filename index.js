@@ -82,19 +82,18 @@ function VerifSenha() {
     const senhaCorreta = 1234;
     let tentativa = 0;
     do {
-        while(tentativa >= 3);
         tentativa ++;
         if (n1 === senhaCorreta) {
             return ('Senha correta');
         }   
         else if (senhaCorreta % n1);
          {
-        console.log('Senha incorreta, tente nomavente'); 
+        console.log('Senha incorreta, tente nomavente')
+        continue; 
         }
 
         if (tentativa >= 3) {
             return('Máximo de tentativas atingido');
-            break
         }
     }   
     while(true);

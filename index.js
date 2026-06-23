@@ -54,27 +54,24 @@ let menorVenda = Math.min(...TotalVendaCarros);
 //console.log
 
 //Saldo
+/* const readline = require('readline-sync');
+function PuxarSaldo() {
 let saldo = 2000
 console.log(`O saldo atual é de R$${saldo}`);
-do { 
-let retirada = Number(prompt.question('Digite a quantia que dedseja retirar'));
+    do { 
+let retirada = Number(readline.question('Digite a quantia que deseja retirar: '));
     if (retirada < saldo) {
     let saldoAtualizada = saldo -= retirada;
-     return 
-} 
+     console.log('Seu saldo agora é de', + saldoAtualizada);
+     } else {
+    console.log('Saldo insuficiente, escolha uma quantia menor: ');
+    continue;
+     }
+    }
+    while(true);
 };
-
-
-
-
-console.log();
+console.log(PuxarSaldo()); */
 //Abobora
-
-
-
-
-
-
 
 
 //Acertar senha 
@@ -85,18 +82,21 @@ function VerifSenha() {
     const senhaCorreta = 1234;
     let tentativa = 0;
     do {
-        
+        while(tentativa >= 3);
+        tentativa ++;
         if (n1 === senhaCorreta) {
             return ('Senha correta');
         }   
         else if (senhaCorreta % n1);
          {
-            return ('Senha incorreta, tente nomavente'); tentativa++
+        console.log('Senha incorreta, tente nomavente'); 
         }
+
         if (tentativa >= 3) {
             return('Máximo de tentativas atingido');
             break
         }
-    }   while(tentativa >= 3);
+    }   
+    while(true);
 };
 console.log(VerifSenha());

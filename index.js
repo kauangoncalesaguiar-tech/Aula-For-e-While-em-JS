@@ -1,5 +1,3 @@
-import (readline-sync);
-const prompt = require('readline-sync');
 //Notas
 const notas = [7, 8, 9, 10, 2, 6, 9, 3, 8, 9];
 //Media da sala inteira
@@ -50,33 +48,87 @@ let menorVenda = Math.min(...TotalVendaCarros);
 //console.log(menorVenda);
 
 //Conversão de temperatura
-let inicio = Number(prompt('Valor inicial'));
-let final = Number(prompt('Valor final'));
+//let inicio = Number(prompt('Valor inicial'));
+//let final = Number(prompt('Valor final'));
 //for(c = inicio)
 //console.log
 
+//Saldo
+/* let saldo = 2000
+console.log(`O saldo atual é de R$${saldo}`);
+do{
+let retirada = Number(prompt.question('Digite a quantia que dedseja retirar'));
+    if (retirada < saldo)[
+    let saldoAtualizada =
+    ] 
+
+
+
+
+
+
+
+
+}; */
+
+//Abobora
+
+
+
+
+
+
+
+
 //Acertar senha 
 
+const readline = require('readline-sync');
 function VerifSenha() {
-     }
-     n1 = Number(prompt.question('Digite uma senha'));
+    let n1 = Number(readline.question('Digite uma senha'));
     const senhaCorreta = 1234;
     let tentativa = 0;
-        do {
-        tentativa = n1;
+    do {
+        tentativa == n1;
 
         tentativa++;
 
-        if (tentativa = senhaCorreta) {
+        if (tentativa == senhaCorreta) {
             return ('Senha correta');
             break;
-    }       else {
+        }
+        else {
             return ('Senha incorreta, tente nomavente');
-    }
+        }
    
         if (tentativa >= 3) {
             return('Máximo de tentativas atingido');
             break
-    }
-}   while(true);
+        }
+    }   while(true);
+};
 console.log(VerifSenha);
+
+/* const prompt = require('readline-sync');
+
+function VerifSenha() {
+    const senhaCorreta = 1234;
+    let tentativas = 0;
+    const maxTentativas = 3;
+
+    do {
+        let senhaDigitada = Number(prompt.question('Digite a senha: '));
+        tentativas++;
+
+        if (senhaDigitada === senhaCorreta) {
+            return 'Senha correta!';
+        } 
+        else {
+            console.log(`Senha incorreta! Tentativa ${tentativas} de ${maxTentativas}`);
+        }
+
+    } while (tentativas < maxTentativas);
+
+    return 'Máximo de tentativas atingido!';
+}
+
+console.log(VerifSenha()); */

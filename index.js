@@ -84,20 +84,19 @@ let retirada = Number(prompt.question('Digite a quantia que dedseja retirar'));
 
 const readline = require('readline-sync');
 function VerifSenha() {
-    let n1 = Number(readline.question('Digite uma senha'));
+    let n1 = Number(readline.question('Digite uma senha: '));
     const senhaCorreta = 1234;
     let tentativa = 0;
     do {
-        tentativa == n1;
-
-        tentativa++;
-
-        if (tentativa == senhaCorreta) {
+        
+        if (n1 === senhaCorreta) {
             return ('Senha correta');
-            break;
         }
         else {
             return ('Senha incorreta, tente nomavente');
+            tentativa = n1;
+
+            tentativa++;
         }
    
         if (tentativa >= 3) {
@@ -106,7 +105,7 @@ function VerifSenha() {
         }
     }   while(true);
 };
-console.log(VerifSenha);
+console.log(VerifSenha());
 
 /* const prompt = require('readline-sync');
 

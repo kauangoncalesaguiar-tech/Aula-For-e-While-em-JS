@@ -54,23 +54,20 @@ let menorVenda = Math.min(...TotalVendaCarros);
 //console.log
 
 //Saldo
-/* let saldo = 2000
+let saldo = 2000
 console.log(`O saldo atual é de R$${saldo}`);
-do{
+do { 
 let retirada = Number(prompt.question('Digite a quantia que dedseja retirar'));
-    if (retirada < saldo)[
-    let saldoAtualizada =
-    ] 
+    if (retirada < saldo) {
+    let saldoAtualizada = saldo -= retirada;
+     return 
+} 
+};
 
 
 
 
-
-
-
-
-}; */
-
+console.log();
 //Abobora
 
 
@@ -91,43 +88,15 @@ function VerifSenha() {
         
         if (n1 === senhaCorreta) {
             return ('Senha correta');
+        }   
+        else if (senhaCorreta % n1);
+         {
+            return ('Senha incorreta, tente nomavente'); tentativa++
         }
-        else {
-            return ('Senha incorreta, tente nomavente');
-            tentativa = n1;
-
-            tentativa++;
-        }
-   
         if (tentativa >= 3) {
             return('Máximo de tentativas atingido');
             break
         }
-    }   while(true);
+    }   while(tentativa >= 3);
 };
 console.log(VerifSenha());
-
-/* const prompt = require('readline-sync');
-
-function VerifSenha() {
-    const senhaCorreta = 1234;
-    let tentativas = 0;
-    const maxTentativas = 3;
-
-    do {
-        let senhaDigitada = Number(prompt.question('Digite a senha: '));
-        tentativas++;
-
-        if (senhaDigitada === senhaCorreta) {
-            return 'Senha correta!';
-        } 
-        else {
-            console.log(`Senha incorreta! Tentativa ${tentativas} de ${maxTentativas}`);
-        }
-
-    } while (tentativas < maxTentativas);
-
-    return 'Máximo de tentativas atingido!';
-}
-
-console.log(VerifSenha()); */

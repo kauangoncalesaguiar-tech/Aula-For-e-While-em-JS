@@ -76,7 +76,7 @@ console.log(PuxarSaldo()); */
 
 //Acertar senha 
 
-const readline = require('readline-sync');
+/* const readline = require('readline-sync');
 
 function VerifSenha() {
   const senhaCorreta = 1234;
@@ -105,4 +105,4 @@ function VerifSenha() {
   return "Verificado senha!"
 };
 
-console.log(VerifSenha());
+console.log(VerifSenha()); */

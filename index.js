@@ -77,25 +77,32 @@ console.log(PuxarSaldo()); */
 //Acertar senha 
 
 const readline = require('readline-sync');
-function VerifSenha() {
-    let n1 = Number(readline.question('Digite uma senha: '));
-    const senhaCorreta = 1234;
-    let tentativa = 0;
-    do {
-        tentativa ++;
-        if (n1 === senhaCorreta) {
-            return ('Senha correta');
-        }   
-        else if (senhaCorreta % n1);
-         {
-        console.log('Senha incorreta, tente nomavente')
-        continue; 
-        }
 
-        if (tentativa >= 3) {
-            return('Máximo de tentativas atingido');
-        }
-    }   
-    while(true);
+function VerifSenha() {
+  const senhaCorreta = 1234;
+  let tentativa = 0;
+  let statusSenha = "F"
+
+  do {
+    tentativa = tentativa + 1;
+    let n1 = Number(readline.question('Digite uma senha: '));
+
+    if(n1 === senhaCorreta){
+      console.log("Senha Correta!");
+      statusSenha = "T";
+    } 
+    else{
+      console.log('Senha incorreta, tente nomavente');
+      statusSenha = "F";
+    }
+
+    if(tentativa >= 3){
+      return 'Máximo de tentativas atingido';
+    }
+
+  }while(statusSenha === "F");
+
+  return "Verificado senha!"
 };
+
 console.log(VerifSenha());

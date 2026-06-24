@@ -71,7 +71,32 @@ let retirada = Number(readline.question('Digite a quantia que deseja retirar: ')
     while(true);
 };
 console.log(PuxarSaldo()); */
-//Abobora
+
+
+/* //Armazenamento de loja com While.. do
+const readline = require('readline-sync'); 
+
+let cadastrados = 0, totalEstoque = 0, maiorQtd = 0, maisPreenchido = "";
+
+while (true) {
+    let nome = readline.question("Produto (ou 'FIM' para sair): ");
+   
+    if (!nome || nome.toUpperCase() === "FIM") break;
+
+    let qtd = +readline.question(`Quantidade de ${nome}: `);
+
+    cadastrados++;
+    totalEstoque += qtd;
+
+    if (qtd > maiorQtd) {
+        maiorQtd = qtd;
+        maisPreenchido = nome;
+    }
+}
+
+console.log(`\nProdutos cadastrados: ${cadastrados}`);
+console.log(`Maior quantidade: ${maisPreenchido} (${maiorQtd} un)`);
+console.log(`Total no estoque: ${totalEstoque}`); */
 
 
 //Acertar senha 

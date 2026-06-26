@@ -1,4 +1,4 @@
-//FOI UTILIZADO 
+//FOI UTILIZADO AUXILIO DA IA NAS 3 ULTIMAS
 
 //Notas
 const notas = [7, 8, 9, 10, 2, 6, 9, 3, 8, 9];
@@ -275,3 +275,16 @@ function registrarVoltas() {
 }
 
 console.log(registrarVoltas()); */
+
+/*  Código nosso que estás em C
+  Santificado seja vós, Console
+  Venha a nós o vosso array[10]
+  E seja feita, sim, {vossa chave}
+  Assim no if{} como no else{}
+  O for (nosso; de cada dia; nos dai hoje++)
+  Debugai as nossas sentenças
+  Assim como nós colocamos o ponto e vígula esquecido;
+          E não nos deixeis errar identação
+  Mas livrai-nos das funções recursivas
+  A main()
+""") */
